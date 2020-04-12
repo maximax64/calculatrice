@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="calcul.css">
+	<title>Calculatrice</title>
+	<script type="text/javascript" src="calcul.js"></script>
+</head>
+<body>
+	<div class="main">
+		<form name="form">
+			<input class="textview" name="textview">
+		</form>
+
+		<table>
+				<tr>
+					<td><input type="button" class="button" name="C" value="C" onclick="clean()"></td>
+					<td><input type="button" class="button" name="del" value="<" onclick="back()"></td>
+					<td><input type="button" class="button" name="÷" value="÷" onclick="touche('/')"></td>
+					<td><input type="button" class="button" name="x" value="x" onclick="touche('*')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class="button" name="7" value="7" onclick="touche(7)"></td>
+					<td><input type="button" class="button" name="8" value="8" onclick="touche(8)"></td>
+					<td><input type="button" class="button" name="9" value="9" onclick="touche(9)"></td>
+					<td><input type="button" class="button" name="-" value="-" onclick="touche('-')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class="button" name="4" value="4" onclick="touche(4)"></td>
+					<td><input type="button" class="button" name="5" value="5" onclick="touche(5)"></td>
+					<td><input type="button" class="button" name="6" value="6" onclick="touche(6)"></td>
+					<td><input type="button" class="button" name="+" value="+" onclick="touche('+')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class="button" name="1" value="1" onclick="touche(1)"></td>
+					<td><input type="button" class="button" name="2" value="2" onclick="touche(2)"></td>
+					<td><input type="button" class="button" name="3" value="3" onclick="touche(3)"></td>
+					<td><input type="button" class="button" name="=" value="=" onclick="calcul()"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class="button" name="0" value="0" onclick="touche(0)"></td>
+					<td><input type="button" class="button" name="(" value="(" onclick="touche('(')"></td>
+					<td><input type="button" class="button" name=")" value=")" onclick="touche(')')"></td>
+					<td><input type="button" class="button" name="." value="." onclick="touche('.')"></td>
+				</tr>
+		</table>
+	</div>
+</body>
+</html>
+
+
